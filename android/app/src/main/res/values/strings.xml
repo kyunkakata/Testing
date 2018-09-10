@@ -1,3 +1,4 @@
 <resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">xwalg7lVMgb_A6P7rGLNBn5c81h_B1b66Pm_Q</string>
     <string name="app_name">KyunBaseApp</string>
 </resources>

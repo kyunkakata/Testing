@@ -40,6 +40,7 @@
 		E259D52BE0354FACA20D431A /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 098A6BAD4D5D44CB846AB9A0 /* libRealmReact.a */; };
 		5455982C26FF4DDBB8EBC197 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E05DD45FEFD4498593CC9CF2 /* libc++.tbd */; };
 		3F8A8849DFE24CB3880B4DE6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6459E45741644EFB25F9A38 /* libz.tbd */; };
+		414D12C9A48B41119C7B2D19 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A63E28CD2B5043D58D5F82C1 /* libCodePush.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -349,6 +350,8 @@
 		098A6BAD4D5D44CB846AB9A0 /* libRealmReact.a */ = {isa = PBXFileReference; name = "libRealmReact.a"; path = "libRealmReact.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		E05DD45FEFD4498593CC9CF2 /* libc++.tbd */ = {isa = PBXFileReference; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 		D6459E45741644EFB25F9A38 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		7C324343063147EBB425B1EA /* CodePush.xcodeproj */ = {isa = PBXFileReference; name = "CodePush.xcodeproj"; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		A63E28CD2B5043D58D5F82C1 /* libCodePush.a */ = {isa = PBXFileReference; name = "libCodePush.a"; path = "libCodePush.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +383,7 @@
 				E259D52BE0354FACA20D431A /* libRealmReact.a in Frameworks */,
 				5455982C26FF4DDBB8EBC197 /* libc++.tbd in Frameworks */,
 				3F8A8849DFE24CB3880B4DE6 /* libz.tbd in Frameworks */,
+				414D12C9A48B41119C7B2D19 /* libCodePush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +573,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				744B820B0F364CB699BD39B0 /* RealmReact.xcodeproj */,
+				7C324343063147EBB425B1EA /* CodePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1196,10 +1201,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Debug;
@@ -1221,10 +1228,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Release;
@@ -1247,6 +1256,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Debug;
@@ -1268,6 +1278,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Release;
@@ -1298,10 +1309,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Debug;
@@ -1332,10 +1345,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Release;
@@ -1365,10 +1380,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Debug;
@@ -1398,10 +1415,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\realm\src/**",
+					"$(SRCROOT)\..\node_modules\react-native-code-push\ios\CodePush/**",
 				);
 			};
 			name = Release;
